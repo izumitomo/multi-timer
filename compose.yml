@@ -7,6 +7,7 @@ services:
       - "./:/todo"
     ports:
       - "5173:5173"
+      - "4173:4173"
     tty: true
     stdin_open: true
     init: true
