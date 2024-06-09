@@ -1,5 +1,5 @@
 let interval: number;
-self.addEventListener("message", (e) => {
+onmessage = (e) => {
   if (e.data.action === "start") {
     let seconds = e.data.time;
     interval = setInterval(() => {
@@ -13,4 +13,4 @@ self.addEventListener("message", (e) => {
     console.log("Reset the timer");
     clearInterval(interval);
   }
-});
+};
