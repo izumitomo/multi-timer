@@ -1,0 +1,1 @@
+(function(){"use strict";let t;onmessage=e=>{if(e.data.action==="start"){let a=e.data.time;t=setInterval(()=>{a++,self.postMessage({seconds:a})},1e3)}else e.data.action==="stop"?(console.log("Stop the timer"),clearInterval(t)):e.data.action==="reset"&&(console.log("Reset the timer"),clearInterval(t))}})();

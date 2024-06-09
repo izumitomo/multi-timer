@@ -12,5 +12,5 @@ export default defineConfig({
     host: true,
     port: 4173,
   },
-  base: "/todo-app/",
+  base: "/multi-timer/",
 });
