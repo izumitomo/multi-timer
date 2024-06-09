@@ -28,7 +28,12 @@ function App() {
       <h1>Multi Timer</h1>
       {state ? (
         <>
-          <Button onClick={handleClear} variant="contained" color="error">
+          <Button
+            onClick={handleClear}
+            variant="contained"
+            color="error"
+            sx={{ margin: "10px 10px" }}
+          >
             Clear All
           </Button>
           <Box display="flex" justifyContent="center" alignItems="center">
@@ -40,7 +45,12 @@ function App() {
           </Box>
         </>
       ) : (
-        <Button onClick={handleClear} variant="contained" color="primary">
+        <Button
+          onClick={handleClear}
+          variant="contained"
+          color="primary"
+          sx={{ margin: "10px 10px" }}
+        >
           Ready?
         </Button>
       )}
