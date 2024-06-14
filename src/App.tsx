@@ -1,5 +1,5 @@
-import Stopwatch from "./components/Stopwatch";
 import "./App.css";
+import Timer from "./components/Timer";
 import { Box, Button, Grid } from "@mui/material";
 import { useState } from "react";
 
@@ -11,9 +11,9 @@ function App() {
   //   Array.from({ length: 20 }, () => "00:00:00")
   // );
 
-  const stopwatches = Array.from({ length: 10 }, (_, index) => (
+  const multiTimers = Array.from({ length: 10 }, (_, index) => (
     <Grid item xs={12} key={index}>
-      <Stopwatch id={index} />
+      <Timer id={index} />
     </Grid>
   ));
   const [state, setState] = useState(true);
@@ -39,7 +39,7 @@ function App() {
           <Box display="flex" justifyContent="center" alignItems="center">
             <Grid container spacing={2}>
               <Box display="flex" flexWrap="wrap" justifyContent="center">
-                {stopwatches}
+                {multiTimers}
               </Box>
             </Grid>
           </Box>
